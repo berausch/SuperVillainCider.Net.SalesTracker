@@ -1,0 +1,49 @@
+﻿@{
+    ViewData["Title"] = "Roles";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@using System.Security.Claims
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.create-role-view').click(function () {
+            $.ajax({
+                type: 'GET',
+                dataType: 'html',
+                url: '@Url.Action("CreateRoleView", "Roles")',
+                success: function (result) {
+                    $('#createRoleView').html(result);
+                }
+            });
+        });
+        $('.assign-role-view').click(function () {
+            $.ajax({
+                type: 'GET',
+                dataType: 'html',
+                url: '@Url.Action("AssignRoleView", "Roles")',
+                success: function (result) {
+                    $('#assignRoleView').html(result);
+                }
+            });
+        });
+    });
+</script>
+
+@*@model List<IdentityRole>*@
+
+<h3>Roles</h3>
+<br />
+
+@foreach (var role in Model)
+{
+    <p>@role.Name</p>
+}
+
+<div class="list-card">
+    <button class="create-role-view">Create role</button>
+    <button class="assign-role-view">Assign role</button>
+    <div id="createRoleView"></div>
+    <div id="assignRoleView"></div>
+</div>
+
+@*<a asp-controller="Roles" asp-action="Create">Create</a> | <a asp-controller="Roles" asp-action="Assign">Assign</a>*@

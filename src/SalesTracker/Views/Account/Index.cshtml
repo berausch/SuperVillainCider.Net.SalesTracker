@@ -1,0 +1,52 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@using System.Security.Claims
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.register-view').click(function () {
+            $.ajax({
+                type: 'GET',
+                dataType: 'html',
+                url: '@Url.Action("DisplayRegisterView", "Account")',
+                success: function (result) {
+                    $('#registerView').html(result);
+                }
+            });
+        });
+        $('.login-view').click(function () {
+            $.ajax({
+                type: 'GET',
+                dataType: 'html',
+                url: '@Url.Action("DisplayLoginView", "Account")',
+                success: function (result) {
+                    $('#loginView').html(result);
+                }
+            });
+        });
+    });
+</script>
+
+<h2></h2>
+<hr />
+
+@if (User.Identity.IsAuthenticated)
+{
+    <h4>Hello @User.Identity.Name!</h4>
+    @using (Html.BeginForm("LogOff", "Account"))
+    {
+        <input type="submit" class="btn btn-default" value="Log out" />
+    }
+    
+}
+else
+{<div class="list-card">
+    <button class="register-view">Register</button>
+    <button class="login-view">Login</button>
+    <div id="registerView"></div>
+    <div id="loginView"></div>
+ </div>
+}
+<p>@Html.ActionLink("Go to Roles", "Index", "Roles")</p>
