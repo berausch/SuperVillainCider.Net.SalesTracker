@@ -29,6 +29,7 @@ namespace SalesTracker
         {
             services.AddMvc();
             services.AddEntityFramework()
+                .AddEntityFrameworkSqlServer()
                 .AddDbContext<ApplicationDbContext>(options =>
                     options.UseSqlServer(Configuration["ConnectionStrings:DefaultConnection"]));
             services.AddIdentity<ApplicationUser, IdentityRole>(options =>
