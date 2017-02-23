@@ -1,0 +1,24 @@
+﻿@{
+    ViewData["Title"] = "Inventory";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@using System.Security.Claims
+
+@model  SalesTracker.Models.Item
+
+
+
+<h2>Sales</h2>
+
+<h3>Buy Item:</h3>
+@using (Html.BeginForm())
+{
+    @Html.LabelFor(m => m.ItemId)
+    @Html.DropDownList("ItemId")
+
+    <input type="submit" value="Add to Cart" class="btn btn-default" />
+}
+
+
+<h3>Cart</h3>
+

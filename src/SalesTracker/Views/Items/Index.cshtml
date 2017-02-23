@@ -3,6 +3,7 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 @using System.Security.Claims
+
 @model IEnumerable<SalesTracker.Models.Item>
 
 <script type="text/javascript">
@@ -15,33 +16,72 @@
                 dataType: 'json',
                 url: '@Url.Action("Details")',
                 success: function (result) {
-                    var thisItem = "<p>" + result.itemId + "<p>";
+                    var thisItem = '<p>' + result.itemId + '</p>';
                     var resultDiv =  "#result" + result.itemId;
-                    console.log(thisItem);
                     $(resultDiv).html(thisItem);
                         }
                     });
+        });
+
+        $('.delete-view').click(function () {
+            event.preventDefault();
+            $.ajax({
+                type: 'GET',
+                dataType: 'html',
+                data: $(this).serialize(),
+                url: '@Url.Action("Delete")',
+                success: function (result) {
+                    $('.display-delete').html(result);
+                }
+            });
+        });
+
+        $('.edit-view').click(function () {
+            event.preventDefault();
+            $.ajax({
+                type: 'GET',
+                dataType: 'html',
+                data: $(this).serialize(),
+                url: '@Url.Action("Edit")',
+                success: function (result) {
+                    $('.display-edit').html(result);
+                }
+            });
         });
     });
 </script>
 
 
+
 @foreach (var item in Model)
 {
     <form action="Details" class="display-details">
-        <input type="number" value="@item.ItemId" name="id" />
+        <input type="hidden" value="@item.ItemId" name="id" />
         <button type="submit">@Html.DisplayFor(i => item.Name)</button>
     </form>
     <script>
         console.log(@item.ItemId)
     </script>
-   
 
     <div id="@("result" +  item.ItemId)"></div>
+    <p>
+            <form action="Delete" class="delete-view">
+                <input type="hidden" value="@item.ItemId" name="id" />
+                <button type="submit">Delete</button>
+            </form>
+
+        <form action="Edit" class="edit-view">
+            <input type="hidden" value="@item.ItemId" name="id" />
+            <button type="submit">Edit</button>
+        </form>
+    </p>
+    <hr />
+    <br />
+    
 }
-<div class="list-card">
-    <button class="register-view">Register</button>
-    <button class="login-view">Login</button>
-    <div id="registerView"></div>
-    <div id="loginView"></div>
-</div>
+
+@Html.ActionLink("Create New Cider Inventory", "Create")
+
+<div class="display-delete"></div>
+<div class="display-edit"></div>
+

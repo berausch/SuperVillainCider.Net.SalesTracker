@@ -1,5 +1,5 @@
---temp-output:C:\Users\epicodus\Documents\Visual Studio 2015\Projects\SalesTracker\src\SalesTracker\obj\Debug\netcoreapp1.0\
---out:C:\Users\epicodus\Documents\Visual Studio 2015\Projects\SalesTracker\src\SalesTracker\bin\Debug\netcoreapp1.0\SalesTracker.dll
+--temp-output:C:\Users\epicodus\Desktop\super-villain-sales-tracker-dotnet\src\SalesTracker\obj\Debug\netcoreapp1.0\
+--out:C:\Users\epicodus\Desktop\super-villain-sales-tracker-dotnet\src\SalesTracker\bin\Debug\netcoreapp1.0\SalesTracker.dll
 --define:DEBUG
 --define:TRACE
 --define:NETCOREAPP1_0
@@ -199,18 +199,19 @@
 --reference:C:\Users\epicodus\.nuget\packages\System.Threading.Timer\4.0.1\ref\netstandard1.2\System.Threading.Timer.dll
 --reference:C:\Users\epicodus\.nuget\packages\System.Xml.ReaderWriter\4.0.11\ref\netstandard1.3\System.Xml.ReaderWriter.dll
 --reference:C:\Users\epicodus\.nuget\packages\System.Xml.XDocument\4.0.11\ref\netstandard1.3\System.Xml.XDocument.dll
---resource:"C:\Users\epicodus\Documents\Visual Studio 2015\Projects\SalesTracker\src\SalesTracker\obj\Debug\netcoreapp1.0\SalesTrackerdotnet-compile.deps.json",SalesTracker.deps.json
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\SalesTracker\src\SalesTracker\Program.cs
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\SalesTracker\src\SalesTracker\Startup.cs
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\SalesTracker\src\SalesTracker\Controllers\AccountController.cs
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\SalesTracker\src\SalesTracker\Controllers\ItemsController.cs
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\SalesTracker\src\SalesTracker\Controllers\RolesController.cs
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\SalesTracker\src\SalesTracker\Migrations\20170222224111_Initial.cs
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\SalesTracker\src\SalesTracker\Migrations\20170222224111_Initial.Designer.cs
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\SalesTracker\src\SalesTracker\Migrations\ApplicationDbContextModelSnapshot.cs
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\SalesTracker\src\SalesTracker\Models\ApplicationDbContext.cs
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\SalesTracker\src\SalesTracker\Models\ApplicationUser.cs
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\SalesTracker\src\SalesTracker\Models\Item.cs
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\SalesTracker\src\SalesTracker\Models\Sale.cs
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\SalesTracker\src\SalesTracker\ViewModels\LoginViewModel.cs
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\SalesTracker\src\SalesTracker\ViewModels\RegisterViewModel.cs
+--resource:"C:\Users\epicodus\Desktop\super-villain-sales-tracker-dotnet\src\SalesTracker\obj\Debug\netcoreapp1.0\SalesTrackerdotnet-compile.deps.json",SalesTracker.deps.json
+C:\Users\epicodus\Desktop\super-villain-sales-tracker-dotnet\src\SalesTracker\Program.cs
+C:\Users\epicodus\Desktop\super-villain-sales-tracker-dotnet\src\SalesTracker\Startup.cs
+C:\Users\epicodus\Desktop\super-villain-sales-tracker-dotnet\src\SalesTracker\Controllers\AccountController.cs
+C:\Users\epicodus\Desktop\super-villain-sales-tracker-dotnet\src\SalesTracker\Controllers\ItemsController.cs
+C:\Users\epicodus\Desktop\super-villain-sales-tracker-dotnet\src\SalesTracker\Controllers\RolesController.cs
+C:\Users\epicodus\Desktop\super-villain-sales-tracker-dotnet\src\SalesTracker\Controllers\SalesController.cs
+C:\Users\epicodus\Desktop\super-villain-sales-tracker-dotnet\src\SalesTracker\Migrations\20170222224111_Initial.cs
+C:\Users\epicodus\Desktop\super-villain-sales-tracker-dotnet\src\SalesTracker\Migrations\20170222224111_Initial.Designer.cs
+C:\Users\epicodus\Desktop\super-villain-sales-tracker-dotnet\src\SalesTracker\Migrations\ApplicationDbContextModelSnapshot.cs
+C:\Users\epicodus\Desktop\super-villain-sales-tracker-dotnet\src\SalesTracker\Models\ApplicationDbContext.cs
+C:\Users\epicodus\Desktop\super-villain-sales-tracker-dotnet\src\SalesTracker\Models\ApplicationUser.cs
+C:\Users\epicodus\Desktop\super-villain-sales-tracker-dotnet\src\SalesTracker\Models\Item.cs
+C:\Users\epicodus\Desktop\super-villain-sales-tracker-dotnet\src\SalesTracker\Models\Sale.cs
+C:\Users\epicodus\Desktop\super-villain-sales-tracker-dotnet\src\SalesTracker\ViewModels\LoginViewModel.cs
+C:\Users\epicodus\Desktop\super-villain-sales-tracker-dotnet\src\SalesTracker\ViewModels\RegisterViewModel.cs
