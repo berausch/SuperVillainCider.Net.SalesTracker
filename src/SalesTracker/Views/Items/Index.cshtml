@@ -16,7 +16,7 @@
                 dataType: 'json',
                 url: '@Url.Action("Details")',
                 success: function (result) {
-                    var thisItem = '<p>' + result.itemId + '</p>';
+                    var thisItem = '<p> Name: ' + result.name + ' | Price: ' + result.price + ' | Qty: '+ result.quantity +'</p>';
                     var resultDiv =  "#result" + result.itemId;
                     $(resultDiv).html(thisItem);
                         }
@@ -85,3 +85,9 @@
 <div class="display-delete"></div>
 <div class="display-edit"></div>
 
+
+<hr />
+<p>@Html.ActionLink("Go to Roles", "Index", "Roles")</p>
+<p>@Html.ActionLink("Go to Account", "Index", "Account")</p>
+<p>@Html.ActionLink("Go to Cart", "Index", "Sales")</p>
+p>@Html.ActionLink("Go to Commission", "Index", "Commission")</p>

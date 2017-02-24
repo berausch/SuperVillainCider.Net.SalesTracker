@@ -1,0 +1,32 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@using System.Security.Claims
+
+@model IEnumerable<SalesTracker.Models.Sale>
+
+
+@if (Model.Any())
+{
+    @foreach (var listSale in Model)
+    {
+        <p>
+           Item:  @Html.DisplayFor(modelItem => listSale.Item.Name) - Price: $@Html.DisplayFor(modelItem => listSale.Item.Price)
+    </p>
+    }
+}
+else
+{ 
+    <h2>Why are you on the computer then? Go sell Cider!</h2>
+}
+
+<h1>Commission: $@ViewBag.CommissionTotal</h1>
+
+<hr />
+
+<p>@Html.ActionLink("Go to Roles", "Index", "Roles")</p>
+<p>@Html.ActionLink("Go to Items", "Index", "Items")</p>
+<p>@Html.ActionLink("Go to Account", "Index", "Account")</p>
+<p>@Html.ActionLink("Go to Commission", "Index", "Commission")</p>
+<p>@Html.ActionLink("Go to Cart", "Index", "Sales")</p>

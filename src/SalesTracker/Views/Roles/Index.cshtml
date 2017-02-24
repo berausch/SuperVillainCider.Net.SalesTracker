@@ -29,7 +29,7 @@
     });
 </script>
 
-@*@model List<IdentityRole>*@
+
 
 <h3>Roles</h3>
 <br />
@@ -46,4 +46,9 @@
     <div id="assignRoleView"></div>
 </div>
 
-@*<a asp-controller="Roles" asp-action="Create">Create</a> | <a asp-controller="Roles" asp-action="Assign">Assign</a>*@
+
+<hr />
+<p>@Html.ActionLink("Go to Account", "Index", "Account")</p>
+<p>@Html.ActionLink("Go to Items", "Index", "Items")</p>
+<p>@Html.ActionLink("Go to Cart", "Index", "Sales")</p>
+p>@Html.ActionLink("Go to Commission", "Index", "Commission")</p>

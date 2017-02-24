@@ -39,7 +39,8 @@
     {
         <input type="submit" class="btn btn-default" value="Log out" />
     }
-    
+    <button class="register-view">Register</button>
+    <div id="registerView"></div>
 }
 else
 {<div class="list-card">
@@ -49,6 +50,9 @@ else
     <div id="loginView"></div>
  </div>
 }
+
+<hr />
 <p>@Html.ActionLink("Go to Roles", "Index", "Roles")</p>
 <p>@Html.ActionLink("Go to Items", "Index", "Items")</p>
-<p>@Html.ActionLink("Go to Sales", "Index", "Sales")</p>
+<p>@Html.ActionLink("Go to Cart", "Index", "Sales")</p>
+<p>@Html.ActionLink("Go to Commission", "Index", "Commission")</p>
