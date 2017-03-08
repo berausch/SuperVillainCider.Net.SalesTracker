@@ -10,7 +10,7 @@ _{This is a .Net exercise made for Epicodus. It is not fully functional yet.}_
 
 ## Setup/Installation Requirements
 
-* _Go to https://github.com/berausch/RPG.Net.git
+* _Go to https://github.com/berausch/SuperVillainCider.Net.SalesTracker.git
 * _Clone the repository
 * _Open the project in Visual Studio
 * _Open your terminal and navigate to Visual Studio, and then Projects\Gummi\src\Gummi 
